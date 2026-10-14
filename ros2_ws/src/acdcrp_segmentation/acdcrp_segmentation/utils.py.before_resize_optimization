@@ -1,0 +1,120 @@
+import cv2
+import numpy as np
+import torch
+
+from .carla_labels import (
+    NUM_CLASSES,
+    cityscapes_rgb_to_raw_ids,
+    remap_label_image,
+)
+
+
+MEAN = np.array([0.485, 0.456, 0.406], dtype=np.float32)
+STD = np.array([0.229, 0.224, 0.225], dtype=np.float32)
+
+
+def decode_compressed_image(msg) -> np.ndarray:
+    """Decode sensor_msgs/CompressedImage into an RGB uint8 array."""
+    buffer = np.frombuffer(bytes(msg.data), dtype=np.uint8)
+    image_bgr = cv2.imdecode(buffer, cv2.IMREAD_COLOR)
+
+    if image_bgr is None:
+        raise ValueError(
+            f"Could not decode CompressedImage "
+            f"(format={getattr(msg, 'format', 'unknown')})"
+        )
+
+    return cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)
+
+
+def preprocess_rgb(
+    image_rgb: np.ndarray,
+    height: int = 256,
+    width: int = 512,
+) -> torch.Tensor:
+    """Resize and normalize RGB image for LightSegNet."""
+    image = cv2.resize(
+        image_rgb,
+        (width, height),
+        interpolation=cv2.INTER_AREA,
+    )
+
+    image = image.astype(np.float32) / 255.0
+    image = (image - MEAN) / STD
+    image = image.transpose(2, 0, 1)
+
+    return torch.from_numpy(image).unsqueeze(0)
+
+
+def decode_ground_truth(
+    msg,
+    height: int = 256,
+    width: int = 512,
+) -> np.ndarray:
+    """Decode CARLA colorized segmentation into reduced class IDs."""
+    image_rgb = decode_compressed_image(msg)
+
+    raw_ids = cityscapes_rgb_to_raw_ids(image_rgb)
+    reduced_ids = remap_label_image(raw_ids)
+
+    return cv2.resize(
+        reduced_ids,
+        (width, height),
+        interpolation=cv2.INTER_NEAREST,
+    )
+
+
+def compute_intersection_union(
+    prediction: np.ndarray,
+    target: np.ndarray,
+    num_classes: int = NUM_CLASSES,
+    ignore_index: int = 255,
+):
+    """Return per-class intersection and union pixel counts."""
+    if prediction.shape != target.shape:
+        raise ValueError(
+            f"Shape mismatch: prediction={prediction.shape}, "
+            f"target={target.shape}"
+        )
+
+    valid = target != ignore_index
+
+    intersection = np.zeros(num_classes, dtype=np.int64)
+    union = np.zeros(num_classes, dtype=np.int64)
+
+    for class_id in range(num_classes):
+        pred_mask = (prediction == class_id) & valid
+        target_mask = (target == class_id) & valid
+
+        class_intersection = np.logical_and(
+            pred_mask,
+            target_mask,
+        ).sum()
+
+        class_union = (
+            pred_mask.sum()
+            + target_mask.sum()
+            - class_intersection
+        )
+
+        intersection[class_id] = class_intersection
+        union[class_id] = class_union
+
+    return intersection, union
+
+
+def compute_iou_from_counts(
+    intersection: np.ndarray,
+    union: np.ndarray,
+):
+    """Calculate per-class IoU and mIoU from accumulated counts."""
+    with np.errstate(divide="ignore", invalid="ignore"):
+        per_class_iou = np.where(
+            union > 0,
+            intersection / union,
+            np.nan,
+        )
+
+    mean_iou = float(np.nanmean(per_class_iou))
+
+    return per_class_iou, mean_iou

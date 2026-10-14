@@ -1,0 +1,38 @@
+{
+  "python": "3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]",
+  "executable": "/home/dockeruser/.venvs/acdcrp-notebook/bin/python",
+  "platform": "Linux-6.8.0-137-generic-x86_64-with-glibc2.39",
+  "versions": {
+    "numpy": "1.26.4",
+    "torch": "2.5.0",
+    "torchvision": "0.20.0",
+    "albumentations": "1.3.1",
+    "opencv-python": "not pip-managed",
+    "matplotlib": "3.6.3"
+  },
+  "git_commit": "4325dcd8ea34247482c987358ae479f3c1847773",
+  "source_sha256": {
+    "carla_labels.py": "077dd1a12f049d9f5e233a803a505dbcd4bab6e2f0a62e00a5e315ab71f82316",
+    "evaluation.py": "f714922acb49be04459be95513a6307d6dd3882e06b09cd0599a88f0baf79e79",
+    "bootstrap.py": "2d2e1fa2131b20060acaf1e81a64baa9f0c1abdc285196407f4d38b27c627e91",
+    "data_extraction-v2.py": "7c71a04ef10145474907d7d6a620b51f9aab4fd1a68075d8dcf633d18a798c6a",
+    "data_extraction.py": "641907758ba17061f2b661f34201674da4fbbec1dc013e7431cb6ce40dd0f630",
+    "dataset.py": "bfe4768fc437fb11cf9e9f62c278228f9ec6fb811bd0556538952a7c22e38e01",
+    "model.py": "a6489d638571a3cb88b81fb27c4013dac1da66f8bfd40fb83494270b78469d06",
+    "prepare_datasets.py": "d3d29b5f5e0be09ea9dc4498b3c7f43e4ed764258ad159344b337ce244d0fc67",
+    "train.py": "0db30c7c2bf45451eb787b40dff41ab9bf4254348e83ff8002280c91d82f4de9",
+    "ros_report_runner.py": "ec23eb9c33961abda19b75ee9a196611051cf548f491302cd47f35bb86c50c56",
+    "report_repro.py": "a657070d702d24f6e119aa09848113b9c6a23606944bf46f7ca6437a8b562d02",
+    "ros2_ws/src/acdcrp_segmentation/setup.py": "c6e17e0f46c18e2729c2af274d7e696d8ec51c717a6eac0f514ad3f24caf8899",
+    "ros2_ws/src/acdcrp_segmentation/acdcrp_segmentation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ros2_ws/src/acdcrp_segmentation/acdcrp_segmentation/model.py": "998e5fdf9192ed10a3945780223bb7f33c98910310151c3b8e2900a80fbf30ed",
+    "ros2_ws/src/acdcrp_segmentation/acdcrp_segmentation/carla_labels.py": "077dd1a12f049d9f5e233a803a505dbcd4bab6e2f0a62e00a5e315ab71f82316",
+    "ros2_ws/src/acdcrp_segmentation/acdcrp_segmentation/utils.py": "70c33d1fc57e0d48702484f8b38ed215ee25cf016ff9b8df20dac383e40c8bcc",
+    "ros2_ws/src/acdcrp_segmentation/acdcrp_segmentation/inference_node.py": "929febf895b301ade549433966bd0844d81cc8af483e98af097ab6747727d632",
+    "ros2_ws/src/acdcrp_segmentation/acdcrp_segmentation/evaluation_node.py": "d352f6e9788521a3e35f657d1fe8aa9387a00275ee22334a7f51af02ef99c5d7",
+    "ros2_ws/src/acdcrp_segmentation/test/test_copyright.py": "ea71bbbc6247b5c14d176ed09f39ee274d563cc9b2ec355828ea451ceff31757",
+    "ros2_ws/src/acdcrp_segmentation/test/test_flake8.py": "37a813a0507f0ce51a2d0b57312d2cc078a0307a3ca85580ea801b0d2f9755d2",
+    "ros2_ws/src/acdcrp_segmentation/test/test_pep257.py": "e8b88d49ee296987b1b40069f81019b5fa09b1aa1bfee9a1faae45bb5cf53eda",
+    "ros2_ws/src/acdcrp_segmentation/launch/live_segmentation.launch.py": "d431efeafc00be5241f22a94e999ec2a69f907ab00f4567a467c3a78475e0085"
+  }
+}

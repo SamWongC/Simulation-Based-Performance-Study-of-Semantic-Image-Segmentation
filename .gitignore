@@ -1,0 +1,25 @@
+# Shared data and checkpoints
+/checkpoints
+/checkpoints_*/
+/data
+/live_checkpoints
+*.pth
+*.mcap
+
+# ROS 2 generated directories
+/ros2_ws/build/
+/ros2_ws/install/
+/ros2_ws/log/
+
+# Python generated files
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Report figures — un-ignore despite the repo-root *.png / *.jpg rules
+!paper_images/
+!paper_images/**
+paper_images/.ipynb_checkpoints/

@@ -1,0 +1,10 @@
+{"pair": 1, "prediction_stamp": [100, 0], "truth_stamp": [100, 0], "miou": 0.5937278274139834, "wall_monotonic": 1850033.260356762}
+{"pair": 2, "prediction_stamp": [101, 0], "truth_stamp": [101, 0], "miou": 0.6003415755549051, "wall_monotonic": 1850033.441198434}
+{"pair": 3, "prediction_stamp": [102, 0], "truth_stamp": [102, 0], "miou": 0.604033898298642, "wall_monotonic": 1850033.650092748}
+{"pair": 4, "prediction_stamp": [103, 0], "truth_stamp": [103, 0], "miou": 0.601500114776023, "wall_monotonic": 1850033.821239257}
+{"pair": 5, "prediction_stamp": [104, 0], "truth_stamp": [104, 0], "miou": 0.6001636771346363, "wall_monotonic": 1850033.994977262}
+{"pair": 6, "prediction_stamp": [105, 0], "truth_stamp": [105, 0], "miou": 0.5991244409652902, "wall_monotonic": 1850034.181385629}
+{"pair": 7, "prediction_stamp": [106, 0], "truth_stamp": [106, 0], "miou": 0.5980239551507269, "wall_monotonic": 1850034.36041891}
+{"pair": 8, "prediction_stamp": [107, 0], "truth_stamp": [107, 0], "miou": 0.5977102645050582, "wall_monotonic": 1850034.54640258}
+{"pair": 9, "prediction_stamp": [108, 0], "truth_stamp": [108, 0], "miou": 0.5981753927267554, "wall_monotonic": 1850034.736043897}
+{"pair": 10, "prediction_stamp": [109, 0], "truth_stamp": [109, 0], "miou": 0.5984793052695534, "wall_monotonic": 1850034.922040952}

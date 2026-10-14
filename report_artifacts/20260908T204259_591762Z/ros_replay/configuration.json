@@ -1,0 +1,16 @@
+{
+  "mode": "replay",
+  "seconds": 60.0,
+  "checkpoint_sha256": "7e21e117a9018cd4037f9c1fa2a8564883ee989f57934d67a0c8e3c4b8e395f0",
+  "rgb_topic": "/report_2a31ea73de/rgb",
+  "gt_topic": "/report_2a31ea73de/truth",
+  "namespace_prefix": "/report_2a31ea73de",
+  "middleware": {
+    "ROS_DOMAIN_ID": "42",
+    "RMW_IMPLEMENTATION": "rmw_fastrtps_cpp",
+    "ZENOH_CONFIG_OVERRIDE": null
+  },
+  "device_requested": "cuda",
+  "sync_queue": 20,
+  "sync_slop": 0.15
+}

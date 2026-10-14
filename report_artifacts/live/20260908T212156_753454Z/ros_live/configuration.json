@@ -1,0 +1,16 @@
+{
+  "mode": "live",
+  "seconds": 60.0,
+  "checkpoint_sha256": "7e21e117a9018cd4037f9c1fa2a8564883ee989f57934d67a0c8e3c4b8e395f0",
+  "rgb_topic": "/carla/ego_vehicle/rgb/image/compressed",
+  "gt_topic": "/carla/ego_vehicle/segmentation/image/compressed",
+  "namespace_prefix": "/report_641ec033a8",
+  "middleware": {
+    "ROS_DOMAIN_ID": "0",
+    "RMW_IMPLEMENTATION": "rmw_zenoh_cpp",
+    "ZENOH_CONFIG_OVERRIDE": "connect/endpoints=[\"tcp/carlab-acdc-rp-wang-local-zenoh-router:7447\"]"
+  },
+  "device_requested": "cuda",
+  "sync_queue": 20,
+  "sync_slop": 0.15
+}

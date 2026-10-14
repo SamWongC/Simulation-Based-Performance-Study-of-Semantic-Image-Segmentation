@@ -1,0 +1,72 @@
+We dont need all ros2 topics (drop lidar, ego state, etc...)
+
+We need only this 4 topics. Apply when using simulation
+
+/carla/ego_vehicle/rgb/image/compressed                     -> Model input
+/carla/ego_vehicle/segmentation/image/compressed            -> Ground-truth label
+/carla/ego_vehicle/rgb/camera_info                          -> Intrinsics (metadata and calibration parameters for a simulated RGB camera attached to your main vehicle)
+/carla/weather                                              -> Weather
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+During the whole training/validation i changed veh_ocu to 0.4 and veh_num to 15 to avoid deadlocks in simulation
+Training  (ClearNoon, spawn_point=1, 30 min each)
+2026-06-09_10-49-12_0 - T1 Town10HD_Opt
+2026-06-09_10-49-12_1 - T2 Town01
+2026-06-09_10-49-12_2 - T3 Town05
+
+ Test 
+
+Block A  (in-distribution, spawn_point=70, 10 min each)
+2026-06-09_13-06-17_0 - V1 Town10HD ClearNoon
+2026-06-09_13-06-17_1 - V2 Town01   ClearNoon
+2026-06-09_13-06-17_2 - V3 Town05   ClearNoon
+
+Block B  (weather shift, Town10HD, spawn_point=1, 10 min each)
+2026-06-10_08-53-40_0 - V4 WetNoon (confirm weather order)
+2026-06-10_08-53-40_1 - V5 HardRainNoon
+2026-06-10_09-34-11_0 - V6 ClearSunset
+2026-06-10_08-53-40_3 - V7 ClearNight
+
+Block C  (map geometry shift, ClearNoon, spawn_point=1, 10 min each)
+2026-06-10_09-58-03_0 - Town02
+2026-06-10_09-58-03_1 - Town03
+2026-06-10_09-58-03_2 - Town04
+
+Block D  (camera shift, Town10HD, ClearNoon, spawn_point=1, 10 min each)
+2026-06-10_13-42-00_0 - V11 - sensors-V11-low-mount.json  (z=1.5) 
+2026-06-10_13-58-00_0 - V12 - sensors-V12-pitch-down.json (pitch=35°)
+2026-06-10_14-21-40_0 - V13 - sensors-V13-wide-fov.json   (fov=110°)
+
+
+Block E  (combined shift, 10 min each)
+2026-06-10_15-06-53_0 - V14
+2026-06-10_15-30-15_0 - V15
+2026-06-10_17-20-26_0 - V16
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+To get the data you have to:
+1. Clone the repo from Gitlab
+2. Symlink the data folder. Just replace <your-folder> with acdc-rp-wang i guess
+ln -s /work/acdc-research-project-ss26/acdc-rp-buriachenko/acdc-research-project-ss26/topics/14-Simulation-Based-Performance-Study-of-Semantic-Image-Segmentation/data \
+      /work/acdc-research-project-ss26/acdc-rp-wang/acdc-research-project-ss26/topics/14-Simulation-Based-Performance-Study-of-Semantic-Image-Segmentation/data
+
+3. Check afterwards if you have +- 18 gb in folder "data" (u have to be in work/.../topics//14-Sim...)
+du -sh data
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+To get the best model use:
+
+ln -s /work/acdc-research-project-ss26/acdc-rp-buriachenko/acdc-research-project-ss26/topics/14-Simulation-Based-Performance-Study-of-Semantic-Image-Segmentation/checkpoints \
+      /work/acdc-research-project-ss26/acdc-rp-wang/acdc-research-project-ss26/topics/14-Simulation-Based-Performance-Study-of-Semantic-Image-Segmentation/checkpoints
+    
+                                                                                                                                                      
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+I trained the model without any augmentation. 
+We could additionally train one model and answer the question, 
+whether the augmentation affect performance(it does)
+
+
+

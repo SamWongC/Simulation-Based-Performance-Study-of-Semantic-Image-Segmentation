@@ -1,0 +1,315 @@
+{
+  "kind": "fresh_offline_constructed_replay",
+  "checkpoint_sha256": "7e21e117a9018cd4037f9c1fa2a8564883ee989f57934d67a0c8e3c4b8e395f0",
+  "epoch": 36,
+  "device": "cuda",
+  "samples": [
+    {
+      "sample": "000000.png",
+      "image_sha256": "e8732c153252a702dcd11821bbc2179b052f35637359e9ac3e03743f8989c90f",
+      "label_sha256": "72e069e3a76707fa73e7e8b00acb845f2ab3039b8a091c15a775475019903c9d"
+    },
+    {
+      "sample": "000001.png",
+      "image_sha256": "9eb39b94a063942538f74bec3010b63af57991af741b5f724197adc5b9b8984e",
+      "label_sha256": "598a42a72480a9344b850a78f019a17f0bf85b9fe2251467a81724f34c65469e"
+    },
+    {
+      "sample": "000002.png",
+      "image_sha256": "fe04c7b4c2dada773a7c13eee2c7810dbb157743ff47418ab0f054512ea51068",
+      "label_sha256": "1e2c56f78798ffe7c1dbbc707d96263fa216d2d316d0c51be0ee8b01d7f7f88c"
+    },
+    {
+      "sample": "000003.png",
+      "image_sha256": "fd6b719ee5ec896a62fb744e5c149820f813471317dd6458704502f98fbf0e03",
+      "label_sha256": "606f5d44cf64769ecceaaa3934ca9241210cdb3fd5847e6495970e8903e460a9"
+    },
+    {
+      "sample": "000004.png",
+      "image_sha256": "4a86c3b6e38be2131ded5bf875191df8bfe23e53384453cd8b24b0aea3284f6d",
+      "label_sha256": "56690c316371a8f5d0202297235cf506c8b485076e4c39a4ef43d7b1d60fa881"
+    },
+    {
+      "sample": "000005.png",
+      "image_sha256": "d65a86192ec6dd5909f5d37ed031f88d7f8e426067f4efd7d45e3af0a27617d4",
+      "label_sha256": "e55d8923b30aad36229a3ee44740555be6b689eaf0cc4eb0bd6673409825ade8"
+    },
+    {
+      "sample": "000006.png",
+      "image_sha256": "d3780dbdc6710e90913d3c8a2476744978b89b4599fbcd2a46dcc5f76374742d",
+      "label_sha256": "51171142fdae6fb072ba94c63773d4e7f7149c089c4aafad7fa683363b781666"
+    },
+    {
+      "sample": "000007.png",
+      "image_sha256": "d20a9149d82f72908e4a04c94e18bf931c52f61e4856fef16ba3e4cba3babebc",
+      "label_sha256": "67ca62a60cd791a926375991cdeca1f4449f9c3df5bf234560d74c627bee8baf"
+    },
+    {
+      "sample": "000008.png",
+      "image_sha256": "1f21c96d3d0ebfe4c154ba093ff7308b1365ceb9b966cc28a59ac386dd3038dd",
+      "label_sha256": "153eaee5667881212def7762761ea8eecedc8823fd4f473c970ba97422c70519"
+    },
+    {
+      "sample": "000009.png",
+      "image_sha256": "099989a8f50ba9723873d9c7c730479ec47f31710a30156be6809b88e653ecd3",
+      "label_sha256": "b9919b45fbca984e919574aef32461348d814d5f7ca2136d4a86ef06b4630c96"
+    }
+  ],
+  "steps": [
+    {
+      "sample": "000000.png",
+      "miou": 0.5937165622389999,
+      "per_class_iou": [
+        0.925797256369143,
+        0.7146942877019402,
+        0.5463939588492464,
+        0.5990957633394395,
+        0.7155267817618415,
+        null,
+        null,
+        0.06079132541238897
+      ]
+    },
+    {
+      "sample": "000001.png",
+      "miou": 0.6003324488664067,
+      "per_class_iou": [
+        0.929376587412825,
+        0.698627279175533,
+        0.5985383376687724,
+        0.6123689861173119,
+        0.6934760002189262,
+        null,
+        null,
+        0.0696075026050712
+      ]
+    },
+    {
+      "sample": "000002.png",
+      "miou": 0.6040362533252425,
+      "per_class_iou": [
+        0.9304346856515268,
+        0.69716405890474,
+        0.61629159932032,
+        0.619709440262441,
+        0.6896954009369475,
+        null,
+        null,
+        0.07092233487547987
+      ]
+    },
+    {
+      "sample": "000003.png",
+      "miou": 0.6014966383415373,
+      "per_class_iou": [
+        0.9308961766276341,
+        0.6764031825650783,
+        0.6186627825024668,
+        0.6184171557066857,
+        0.6951665703832082,
+        null,
+        null,
+        0.06943396226415094
+      ]
+    },
+    {
+      "sample": "000004.png",
+      "miou": 0.6001616044772047,
+      "per_class_iou": [
+        0.9309450115245308,
+        0.6654078418405527,
+        0.6247975140715902,
+        0.6178229246800475,
+        0.6915464369959954,
+        null,
+        null,
+        0.07044989775051125
+      ]
+    },
+    {
+      "sample": "000005.png",
+      "miou": 0.5991211869812022,
+      "per_class_iou": [
+        0.9322509087825732,
+        0.65721270682053,
+        0.6272851799167589,
+        0.6145240872633478,
+        0.6924254227191495,
+        null,
+        null,
+        0.07102881638485353
+      ]
+    },
+    {
+      "sample": "000006.png",
+      "miou": 0.598027527971624,
+      "per_class_iou": [
+        0.9327793802181659,
+        0.6522527933135643,
+        0.6277583258692289,
+        0.611721906341065,
+        0.6917588886272663,
+        null,
+        null,
+        0.07189387346045309
+      ]
+    },
+    {
+      "sample": "000007.png",
+      "miou": 0.5977114623480683,
+      "per_class_iou": [
+        0.9341078539743901,
+        0.6481997804610319,
+        0.6282292611981406,
+        0.6098808231679329,
+        0.6929329108692658,
+        null,
+        null,
+        0.07291814441764789
+      ]
+    },
+    {
+      "sample": "000008.png",
+      "miou": 0.5981767066395379,
+      "per_class_iou": [
+        0.9351351253283792,
+        0.6481651825031803,
+        0.6287974761714876,
+        0.6093699871191408,
+        0.6943570109399255,
+        null,
+        null,
+        0.0732354577751145
+      ]
+    },
+    {
+      "sample": "000009.png",
+      "miou": 0.598477122412349,
+      "per_class_iou": [
+        0.9361770166777068,
+        0.646800657000053,
+        0.6294296374927696,
+        0.608807754887697,
+        0.6962154865763458,
+        null,
+        null,
+        0.07343218183952115
+      ]
+    }
+  ],
+  "decoder_benchmark_source": "constructed PNG labels, NOT historical live JPEG frames",
+  "decoder_trials": [
+    {
+      "sample": "000000.png",
+      "old_ms": 381.1498840805143,
+      "new_ms": 99.22120114788413,
+      "mismatched_pixels": 0
+    },
+    {
+      "sample": "000001.png",
+      "new_ms": 96.94957383908331,
+      "old_ms": 388.5886080097407,
+      "mismatched_pixels": 0
+    },
+    {
+      "sample": "000002.png",
+      "old_ms": 392.3736640717834,
+      "new_ms": 99.77881796658039,
+      "mismatched_pixels": 0
+    },
+    {
+      "sample": "000003.png",
+      "new_ms": 97.67103684134781,
+      "old_ms": 390.7021109480411,
+      "mismatched_pixels": 0
+    },
+    {
+      "sample": "000004.png",
+      "old_ms": 388.1597069557756,
+      "new_ms": 98.98793511092663,
+      "mismatched_pixels": 0
+    },
+    {
+      "sample": "000005.png",
+      "new_ms": 99.46471895091236,
+      "old_ms": 402.7259601280093,
+      "mismatched_pixels": 0
+    },
+    {
+      "sample": "000006.png",
+      "old_ms": 385.4085220955312,
+      "new_ms": 99.97220989316702,
+      "mismatched_pixels": 0
+    },
+    {
+      "sample": "000007.png",
+      "new_ms": 97.61788812465966,
+      "old_ms": 386.8144270963967,
+      "mismatched_pixels": 0
+    },
+    {
+      "sample": "000008.png",
+      "old_ms": 391.2965999916196,
+      "new_ms": 101.17533593438566,
+      "mismatched_pixels": 0
+    },
+    {
+      "sample": "000009.png",
+      "new_ms": 96.5853629168123,
+      "old_ms": 395.283963996917,
+      "mismatched_pixels": 0
+    }
+  ],
+  "decoder_old_median_ms": 389.6453594788909,
+  "decoder_new_median_ms": 99.10456812940538,
+  "metric_unit_test": "passed",
+  "environment": {
+    "python": "3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]",
+    "executable": "/home/dockeruser/.venvs/acdcrp-notebook/bin/python",
+    "platform": "Linux-6.8.0-137-generic-x86_64-with-glibc2.39",
+    "versions": {
+      "numpy": "1.26.4",
+      "torch": "2.5.0",
+      "torchvision": "0.20.0",
+      "albumentations": "1.3.1",
+      "opencv-python": "not pip-managed",
+      "matplotlib": "3.6.3"
+    },
+    "git_commit": "4325dcd8ea34247482c987358ae479f3c1847773",
+    "source_sha256": {
+      "carla_labels.py": "077dd1a12f049d9f5e233a803a505dbcd4bab6e2f0a62e00a5e315ab71f82316",
+      "evaluation.py": "f714922acb49be04459be95513a6307d6dd3882e06b09cd0599a88f0baf79e79",
+      "bootstrap.py": "2d2e1fa2131b20060acaf1e81a64baa9f0c1abdc285196407f4d38b27c627e91",
+      "data_extraction-v2.py": "7c71a04ef10145474907d7d6a620b51f9aab4fd1a68075d8dcf633d18a798c6a",
+      "data_extraction.py": "641907758ba17061f2b661f34201674da4fbbec1dc013e7431cb6ce40dd0f630",
+      "dataset.py": "bfe4768fc437fb11cf9e9f62c278228f9ec6fb811bd0556538952a7c22e38e01",
+      "model.py": "a6489d638571a3cb88b81fb27c4013dac1da66f8bfd40fb83494270b78469d06",
+      "prepare_datasets.py": "d3d29b5f5e0be09ea9dc4498b3c7f43e4ed764258ad159344b337ce244d0fc67",
+      "train.py": "0db30c7c2bf45451eb787b40dff41ab9bf4254348e83ff8002280c91d82f4de9",
+      "ros_report_runner.py": "ec23eb9c33961abda19b75ee9a196611051cf548f491302cd47f35bb86c50c56",
+      "report_repro.py": "a657070d702d24f6e119aa09848113b9c6a23606944bf46f7ca6437a8b562d02",
+      "ros2_ws/src/acdcrp_segmentation/setup.py": "c6e17e0f46c18e2729c2af274d7e696d8ec51c717a6eac0f514ad3f24caf8899",
+      "ros2_ws/src/acdcrp_segmentation/acdcrp_segmentation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "ros2_ws/src/acdcrp_segmentation/acdcrp_segmentation/model.py": "998e5fdf9192ed10a3945780223bb7f33c98910310151c3b8e2900a80fbf30ed",
+      "ros2_ws/src/acdcrp_segmentation/acdcrp_segmentation/carla_labels.py": "077dd1a12f049d9f5e233a803a505dbcd4bab6e2f0a62e00a5e315ab71f82316",
+      "ros2_ws/src/acdcrp_segmentation/acdcrp_segmentation/utils.py": "70c33d1fc57e0d48702484f8b38ed215ee25cf016ff9b8df20dac383e40c8bcc",
+      "ros2_ws/src/acdcrp_segmentation/acdcrp_segmentation/inference_node.py": "929febf895b301ade549433966bd0844d81cc8af483e98af097ab6747727d632",
+      "ros2_ws/src/acdcrp_segmentation/acdcrp_segmentation/evaluation_node.py": "d352f6e9788521a3e35f657d1fe8aa9387a00275ee22334a7f51af02ef99c5d7",
+      "ros2_ws/src/acdcrp_segmentation/test/test_copyright.py": "ea71bbbc6247b5c14d176ed09f39ee274d563cc9b2ec355828ea451ceff31757",
+      "ros2_ws/src/acdcrp_segmentation/test/test_flake8.py": "37a813a0507f0ce51a2d0b57312d2cc078a0307a3ca85580ea801b0d2f9755d2",
+      "ros2_ws/src/acdcrp_segmentation/test/test_pep257.py": "e8b88d49ee296987b1b40069f81019b5fa09b1aa1bfee9a1faae45bb5cf53eda",
+      "ros2_ws/src/acdcrp_segmentation/launch/live_segmentation.launch.py": "d431efeafc00be5241f22a94e999ec2a69f907ab00f4567a467c3a78475e0085"
+    }
+  },
+  "miou": 0.598477122412349,
+  "per_class_iou": [
+    0.9361770166777068,
+    0.646800657000053,
+    0.6294296374927696,
+    0.608807754887697,
+    0.6962154865763458,
+    null,
+    null,
+    0.07343218183952115
+  ]
+}

@@ -1,0 +1,31 @@
+[2m2026-09-08T21:41:51.864436Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer 254363691b9feb288942c020a1e91b17: [tcp/[::1]:37901]
+[2m2026-09-08T21:41:51.864501Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer f05b203f896b92c16ad27783a57ae3a0: [tcp/[::1]:46795]
+[2m2026-09-08T21:41:51.864516Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer 4c830958d1172475f6232fde9e6b2492: [tcp/[::1]:36621]
+[2m2026-09-08T21:41:51.864528Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer 8f21794cc06c5c34c24b3a3e6afe4100: [tcp/[::1]:40561]
+[2m2026-09-08T21:41:52.360710Z[0m [33m WARN[0m ThreadId(11) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+{
+  "output": "/acdc/topics/14-Simulation-Based-Performance-Study-of-Semantic-Image-Segmentation/report_artifacts/live/20260908T212156_753454Z/ros_live",
+  "pairs": 461,
+  "rates": {
+    "rgb": {
+      "received": 898,
+      "window_seconds": 60.00566186499782,
+      "hz": 14.965254479158016
+    },
+    "gt": {
+      "received": 897,
+      "window_seconds": 60.00566186499782,
+      "hz": 14.948589385083231
+    },
+    "prediction": {
+      "received": 897,
+      "window_seconds": 60.00566186499782,
+      "hz": 14.948589385083231
+    },
+    "metric": {
+      "received": 456,
+      "window_seconds": 60.00566186499782,
+      "hz": 7.599282898102512
+    }
+  }
+}

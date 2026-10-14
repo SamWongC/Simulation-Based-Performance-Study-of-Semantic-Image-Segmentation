@@ -1,0 +1,33 @@
+segmentation_inference_node:
+  ros__parameters:
+    checkpoint_path: /acdc/topics/14-Simulation-Based-Performance-Study-of-Semantic-Image-Segmentation/live_checkpoints/best_model.pth
+    device: cuda
+
+    input_topic: /carla/ego_vehicle/rgb/image/compressed
+
+    mask_topic: /acdcrp/prediction/mask
+    color_topic: /acdcrp/prediction/color
+
+    height: 256
+    width: 512
+
+    publish_color: true
+    log_every_n: 30
+
+
+segmentation_evaluation_node:
+  ros__parameters:
+    prediction_topic: /acdcrp/prediction/mask
+
+    ground_truth_topic: /carla/ego_vehicle/segmentation/image/compressed
+
+    frame_miou_topic: /acdcrp/evaluation/frame_miou
+    cumulative_miou_topic: /acdcrp/evaluation/cumulative_miou
+    per_class_iou_topic: /acdcrp/evaluation/per_class_iou
+
+    ground_truth_color_topic: /acdcrp/evaluation/ground_truth_color
+    overlay_topic: /acdcrp/evaluation/overlay
+
+    sync_queue_size: 20
+    sync_slop: 0.15
+    log_every_n: 30

@@ -1,0 +1,112 @@
+[
+  {
+    "file": "live_gt_00.bin",
+    "format": "jpeg",
+    "stamp": [
+      110,
+      64831506
+    ],
+    "old_ms": 391.32254594005644,
+    "new_ms": 101.28558008000255,
+    "mismatched_pixels": 0
+  },
+  {
+    "file": "live_gt_01.bin",
+    "format": "jpeg",
+    "stamp": [
+      110,
+      164831507
+    ],
+    "new_ms": 96.89672710373998,
+    "old_ms": 391.8924159370363,
+    "mismatched_pixels": 0
+  },
+  {
+    "file": "live_gt_02.bin",
+    "format": "jpeg",
+    "stamp": [
+      110,
+      264831509
+    ],
+    "old_ms": 392.1753859613091,
+    "new_ms": 101.24592599458992,
+    "mismatched_pixels": 0
+  },
+  {
+    "file": "live_gt_03.bin",
+    "format": "jpeg",
+    "stamp": [
+      110,
+      364831510
+    ],
+    "new_ms": 97.49283501878381,
+    "old_ms": 393.11889512464404,
+    "mismatched_pixels": 0
+  },
+  {
+    "file": "live_gt_04.bin",
+    "format": "jpeg",
+    "stamp": [
+      110,
+      464831512
+    ],
+    "old_ms": 393.66376702673733,
+    "new_ms": 102.12937300093472,
+    "mismatched_pixels": 0
+  },
+  {
+    "file": "live_gt_05.bin",
+    "format": "jpeg",
+    "stamp": [
+      110,
+      564831513
+    ],
+    "new_ms": 97.68863301724195,
+    "old_ms": 393.6011800542474,
+    "mismatched_pixels": 0
+  },
+  {
+    "file": "live_gt_06.bin",
+    "format": "jpeg",
+    "stamp": [
+      110,
+      664831515
+    ],
+    "old_ms": 394.48851509951055,
+    "new_ms": 105.08564696647227,
+    "mismatched_pixels": 0
+  },
+  {
+    "file": "live_gt_07.bin",
+    "format": "jpeg",
+    "stamp": [
+      110,
+      764831516
+    ],
+    "new_ms": 97.97791508026421,
+    "old_ms": 391.9371289666742,
+    "mismatched_pixels": 0
+  },
+  {
+    "file": "live_gt_08.bin",
+    "format": "jpeg",
+    "stamp": [
+      110,
+      864831518
+    ],
+    "old_ms": 392.2981349751353,
+    "new_ms": 101.81172704324126,
+    "mismatched_pixels": 0
+  },
+  {
+    "file": "live_gt_09.bin",
+    "format": "jpeg",
+    "stamp": [
+      110,
+      964831519
+    ],
+    "new_ms": 98.66453288123012,
+    "old_ms": 393.0498349945992,
+    "mismatched_pixels": 0
+  }
+]

@@ -1,0 +1,37 @@
+[2m2026-09-08T21:41:53.976680Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer 254363691b9feb288942c020a1e91b17: [tcp/[::1]:37901]
+[2m2026-09-08T21:41:53.977225Z[0m [33m WARN[0m net-0 ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Unable to connect to any locator of scouted peer 8f21794cc06c5c34c24b3a3e6afe4100: [tcp/[::1]:40561]
+[2m2026-09-08T21:41:54.473342Z[0m [33m WARN[0m ThreadId(13) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[INFO] [1788903714.532872056] [segmentation_evaluation_node]: Prediction topic: /report_641ec033a8/mask
+[INFO] [1788903714.533412830] [segmentation_evaluation_node]: Ground-truth topic: /carla/ego_vehicle/segmentation/image/compressed
+[INFO] [1788903714.533914311] [segmentation_evaluation_node]: Synchronization: queue=20, slop=0.150 s
+[INFO] [1788903714.534406414] [segmentation_evaluation_node]: Class order: 0=road, 1=sidewalk, 2=building, 3=vegetation, 4=vehicle, 5=pedestrian, 6=sky, 7=other
+[INFO] [1788903719.531932579] [segmentation_evaluation_node]: Pair 30: frame_mIoU=0.7901, cumulative_mIoU=0.5385
+[INFO] [1788903719.532556289] [segmentation_evaluation_node]: Per-class IoU: road=0.958, sidewalk=0.813, building=0.799, vegetation=0.363, vehicle=0.907, pedestrian=0.000, sky=0.000, other=0.467
+[INFO] [1788903723.505877841] [segmentation_evaluation_node]: Pair 60: frame_mIoU=0.7993, cumulative_mIoU=0.5655
+[INFO] [1788903723.506453080] [segmentation_evaluation_node]: Per-class IoU: road=0.959, sidewalk=0.854, building=0.834, vegetation=0.425, vehicle=0.922, pedestrian=0.000, sky=0.000, other=0.531
+[INFO] [1788903727.381710880] [segmentation_evaluation_node]: Pair 90: frame_mIoU=0.8082, cumulative_mIoU=0.5781
+[INFO] [1788903727.382276401] [segmentation_evaluation_node]: Per-class IoU: road=0.961, sidewalk=0.870, building=0.846, vegetation=0.455, vehicle=0.934, pedestrian=0.000, sky=0.000, other=0.559
+[INFO] [1788903731.305661363] [segmentation_evaluation_node]: Pair 120: frame_mIoU=0.8117, cumulative_mIoU=0.5850
+[INFO] [1788903731.306236382] [segmentation_evaluation_node]: Per-class IoU: road=0.962, sidewalk=0.879, building=0.853, vegetation=0.471, vehicle=0.942, pedestrian=0.000, sky=0.000, other=0.573
+[INFO] [1788903735.251669098] [segmentation_evaluation_node]: Pair 150: frame_mIoU=0.8119, cumulative_mIoU=0.5893
+[INFO] [1788903735.252200845] [segmentation_evaluation_node]: Per-class IoU: road=0.963, sidewalk=0.884, building=0.857, vegetation=0.482, vehicle=0.947, pedestrian=0.000, sky=0.000, other=0.582
+[INFO] [1788903739.168249197] [segmentation_evaluation_node]: Pair 180: frame_mIoU=0.5636, cumulative_mIoU=0.5830
+[INFO] [1788903739.168815179] [segmentation_evaluation_node]: Per-class IoU: road=0.963, sidewalk=0.879, building=0.850, vegetation=0.457, vehicle=0.950, pedestrian=0.000, sky=0.000, other=0.565
+[INFO] [1788903743.081857970] [segmentation_evaluation_node]: Pair 210: frame_mIoU=0.5554, cumulative_mIoU=0.5893
+[INFO] [1788903743.082393615] [segmentation_evaluation_node]: Per-class IoU: road=0.963, sidewalk=0.861, building=0.832, vegetation=0.384, vehicle=0.950, pedestrian=0.000, sky=0.201, other=0.523
+[INFO] [1788903747.015551753] [segmentation_evaluation_node]: Pair 240: frame_mIoU=0.6064, cumulative_mIoU=0.5866
+[INFO] [1788903747.016083591] [segmentation_evaluation_node]: Per-class IoU: road=0.964, sidewalk=0.849, building=0.814, vegetation=0.341, vehicle=0.948, pedestrian=0.000, sky=0.288, other=0.489
+[INFO] [1788903750.986536022] [segmentation_evaluation_node]: Pair 270: frame_mIoU=0.6166, cumulative_mIoU=0.6018
+[INFO] [1788903750.987076266] [segmentation_evaluation_node]: Per-class IoU: road=0.963, sidewalk=0.842, building=0.803, vegetation=0.361, vehicle=0.944, pedestrian=0.000, sky=0.428, other=0.474
+[INFO] [1788903754.954763456] [segmentation_evaluation_node]: Pair 300: frame_mIoU=0.6719, cumulative_mIoU=0.6205
+[INFO] [1788903754.955305824] [segmentation_evaluation_node]: Per-class IoU: road=0.965, sidewalk=0.843, building=0.796, vegetation=0.388, vehicle=0.946, pedestrian=0.000, sky=0.562, other=0.465
+[INFO] [1788903758.882719625] [segmentation_evaluation_node]: Pair 330: frame_mIoU=0.7162, cumulative_mIoU=0.6259
+[INFO] [1788903758.883247445] [segmentation_evaluation_node]: Per-class IoU: road=0.965, sidewalk=0.842, building=0.790, vegetation=0.434, vehicle=0.947, pedestrian=0.000, sky=0.572, other=0.457
+[INFO] [1788903762.848103808] [segmentation_evaluation_node]: Pair 360: frame_mIoU=0.5495, cumulative_mIoU=0.6250
+[INFO] [1788903762.848678295] [segmentation_evaluation_node]: Per-class IoU: road=0.966, sidewalk=0.841, building=0.781, vegetation=0.448, vehicle=0.945, pedestrian=0.000, sky=0.569, other=0.450
+[INFO] [1788903766.920097844] [segmentation_evaluation_node]: Pair 390: frame_mIoU=0.6339, cumulative_mIoU=0.6241
+[INFO] [1788903766.920642816] [segmentation_evaluation_node]: Per-class IoU: road=0.966, sidewalk=0.844, building=0.771, vegetation=0.444, vehicle=0.941, pedestrian=0.000, sky=0.569, other=0.459
+[INFO] [1788903770.821973109] [segmentation_evaluation_node]: Pair 420: frame_mIoU=0.6167, cumulative_mIoU=0.6261
+[INFO] [1788903770.822496010] [segmentation_evaluation_node]: Per-class IoU: road=0.966, sidewalk=0.847, building=0.773, vegetation=0.444, vehicle=0.940, pedestrian=0.000, sky=0.569, other=0.469
+[INFO] [1788903774.751482266] [segmentation_evaluation_node]: Pair 450: frame_mIoU=0.7388, cumulative_mIoU=0.6242
+[INFO] [1788903774.752019293] [segmentation_evaluation_node]: Per-class IoU: road=0.965, sidewalk=0.844, building=0.779, vegetation=0.444, vehicle=0.923, pedestrian=0.000, sky=0.569, other=0.470

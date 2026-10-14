@@ -1,0 +1,9 @@
+{
+  "checkpoint": "/acdc/topics/14-Simulation-Based-Performance-Study-of-Semantic-Image-Segmentation/live_checkpoints/best_model.pth",
+  "checkpoint_sha256": "7e21e117a9018cd4037f9c1fa2a8564883ee989f57934d67a0c8e3c4b8e395f0",
+  "device_requested": "cuda",
+  "seconds": 60,
+  "endpoint": "tcp/carlab-acdc-rp-wang-local-zenoh-router:7447",
+  "domain": 0,
+  "job_id": "2026-09-08_21-40-19_0"
+}
